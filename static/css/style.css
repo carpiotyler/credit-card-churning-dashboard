@@ -1,0 +1,78 @@
+body {
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightyellow;
+    overflow: hidden
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.data-view {
+    width: 70%;
+    height: 100%;
+}
+
+#plotly-lineGraph {
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+.transactions {
+    width: 30%;
+    height: 100%;
+    padding: 4px;
+}
+
+.transaction-header {
+    height: 64px;
+}
+
+#card-selector {
+    width: 40%;
+    margin: 4px;
+}
+
+/*#add-card, #delete-card, #add-transaction, .edit-transaction, .delete-transaction {
+    float: right;
+}*/
+#transaction-list {
+    overflow: auto;
+    height: calc(98% - 64px);
+}
+
+.modal {
+    justify-content: center;
+}
+
+.modal-content {
+    width: 80%;
+    line-height: 1.5;
+}
+
+.modal-input {
+    float: right;
+}
+
+.transaction-card {
+    width: 80%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: #79aec8;
+    border-radius: 4px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    line-height: 2em;
+}
+
+.transaction-id {
+    display: none;
+}

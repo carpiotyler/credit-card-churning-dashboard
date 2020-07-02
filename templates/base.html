@@ -1,0 +1,21 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Churning</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="{% static "css/jquery.modal.css" %}">
+    <script src="{% static "js/jquery-3.4.1.min.js" %}"></script>
+    <script src="{% static "js/jquery.modal.min.js" %}"></script>
+    <script src="{% static "js/plotly-latest.min.js" %}"></script>
+    <script src="{% static "js/moment.js"%}"></script>
+    <script src="{% static "js/code.js" %}"></script>
+</head>
+<body>
+    {% block content %}{% endblock content %}
+</body>
+</html>

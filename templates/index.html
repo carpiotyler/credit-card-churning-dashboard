@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="main-container">
+        <div class="transactions">
+            <div class="transaction-header">
+                Viewing: <select id="card-selector"></select> <a href="#" id="delete-card">Delete</a>   <a href="#add-card-modal" rel="modal:open" id="add-card">Add a Card</a><br/>
+                Displaying: <strong id="transaction-count">0</strong> total transactions. <a href="#add-transaction-modal" rel="modal:open" id="add-transaction">Add Transaction</a>
+            </div>
+            <!-- Modals --->
+            <div id="add-card-modal" class="modal">
+                <div class="modal-content">
+                    Card Name:<input id="cardName" type="text" class="modal-input"><br>
+                    Spending Goal:<input id="spendingGoal" type="number" class="modal-input"><br>
+                    Goal Due Date:<input id="spendingDate" type="date" class="modal-input"><br>
+                    <a id="addCard" href="#" rel="modal:close">Save</a>
+                </div>
+            </div>
+            <div id="add-transaction-modal" class="modal">
+                <div class="modal-content">
+                    Transaction Name:   <input id="transactionName" type="text" class="modal-input"><br>
+                    Amount:             <input id="transactionAmount" type="number" class="modal-input"><br>
+                    Date:               <input id="transactionDate" type="date" class="modal-input"><br>
+                    <a id="addTransaction" href="#" rel="modal:close">Save</a>
+                </div>
+            </div>
+
+            <!-- Transaction list --->
+            <div id="transaction-list">
+
+            </div>
+        </div>
+        <div class="data-view">
+            <div id="plotly-lineGraph"></div>
+        </div>
+    </div>
+{% endblock content %}
